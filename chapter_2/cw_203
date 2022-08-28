@@ -1,0 +1,13 @@
+SELECT C.CUSTOMER_ID,
+CASE 
+WHEN C.STATE IN (
+'MA', 'NH', 'VT', 'ME', 'CT', 'RI') 
+THEN 'Nowa Anglia'
+WHEN C.STATE IN (
+'GA', 'FL', 'MS', 'AL', 'LA', 'KY', 'VA', 'NC', 'SC', 'TN', 'VI', 'WV', 'AR')
+THEN 'Południowy wschód'
+ELSE 'Inne' END AS REGION
+FROM
+CUSTOMERS C
+ORDER BY 1;
+

@@ -1,0 +1,1 @@
+COPY (SELECT * FROM CUSTOMERS LIMIT 5) TO 'D:\User\m.gula\SQL\chapter_4\test1.csv' WITH CSV HEADER;
