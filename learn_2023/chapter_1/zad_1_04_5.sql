@@ -1,2 +1,1 @@
-UPDATE CUSTOMERS_NYC
-SET EVENT = 'Impreza w ramach podziękowan';
+DROP TABLE CUSTOMERS_NYC;
